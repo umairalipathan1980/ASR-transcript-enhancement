@@ -19,7 +19,7 @@ The repository also includes:
 ```
 transcript_eval/
 │
-├── .env                              # API keys (OPENAI_API_KEY)
+├── .env.example                      # Template for required environment variables
 ├── README.md                         # This file
 ├── requirements.txt                  # Python dependencies
 ├── sample.txt                        # Sample transcript for quick testing
@@ -50,15 +50,18 @@ pip install whisperx
 
 ### 2. Configure API access
 
-Create a `.env` file in the project root with your API credentials:
+Copy the provided example file and fill in your credentials:
 
 ```bash
-# Azure OpenAI (OPTIONAL. Use  this if you have Azure OpenAI API key)
-AZURE_API_KEY=your-azure-api-key
-
-# Standard OpenAI
-OPENAI_API_KEY=your-openai-api-key
+cp .env.example .env
 ```
+
+Then edit `.env` and replace the placeholder values with your actual API keys:
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `OPENAI_API_KEY` | Yes | Standard OpenAI API key |
+| `AZURE_API_KEY` | Optional | Azure OpenAI API key, if using Azure instead of standard OpenAI |
 
 ### 3. Run transcript enhancement
 

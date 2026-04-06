@@ -1,0 +1,16 @@
+# Evaluation
+jiwer==4.0.0                # WER and CER computation
+rapidfuzz==3.14.3           # Levenshtein distance for spelling error detection
+openpyxl==3.1.5             # Excel report generation
+
+# API clients
+openai==2.8.1               # OpenAI and Azure OpenAI API client
+python-dotenv==1.2.1        # Load API keys from .env file
+
+# Enhancement (GAIK software component)
+gaik[enhance-transcript]    # TranscriptEnhancer component from the GAIK Toolkit
+
+# Local transcription (optional — only needed for transcribers/whisperX.py)
+# torch                     # PyTorch (GPU support); install separately per platform:
+#                           # https://pytorch.org/get-started/locally/
+# whisperx                  # WhisperX local ASR model

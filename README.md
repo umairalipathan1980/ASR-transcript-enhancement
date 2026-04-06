@@ -14,6 +14,26 @@ The repository also includes:
 
 ---
 
+## Project Structure
+
+```
+transcript_eval/
+│
+├── .env                              # API keys (OPENAI_API_KEY)
+├── README.md                         # This file
+├── requirements.txt                  # Python dependencies
+├── sample.txt                        # Sample transcript for quick testing
+├── enhanced_transcript_example.py    # Usage example for the TranscriptEnhancer component
+├── eval_enhanced.py                  # Batch evaluation: original vs enhanced, outputs Excel report
+├── side_by_side_compare.py          # Per-file word-level alignment reports with error markers
+│
+└── transcribers/
+    ├── transcribe-gpt-4o.py         # Transcribes audio using OpenAI gpt-4o-transcribe
+    ├── transcribe-whisper-openai.py  # Transcribes audio using OpenAI whisper-1 API
+    └── whisperX.py                   # Transcribes audio using local WhisperX model (GPU)
+```
+---
+
 ## Installation & Setup
 
 ### 1. Install dependencies
@@ -190,27 +210,6 @@ Both prompt constants are exported from the package and can be used as a startin
 
 ```python
 from gaik.software_components.enhance_transcript import PASS1_SYSTEM_PROMPT, PASS2_SYSTEM_PROMPT
-```
-
----
-
-## Project Structure
-
-```
-transcript_eval/
-│
-├── .env                              # API keys (OPENAI_API_KEY)
-├── README.md                         # This file
-├── requirements.txt                  # Python dependencies
-├── sample.txt                        # Sample transcript for quick testing
-├── enhanced_transcript_example.py    # Usage example for the TranscriptEnhancer component
-├── eval_enhanced.py                  # Batch evaluation: original vs enhanced, outputs Excel report
-├── side_by_side_compare.py          # Per-file word-level alignment reports with error markers
-│
-└── transcribers/
-    ├── transcribe-gpt-4o.py         # Transcribes audio using OpenAI gpt-4o-transcribe
-    ├── transcribe-whisper-openai.py  # Transcribes audio using OpenAI whisper-1 API
-    └── whisperX.py                   # Transcribes audio using local WhisperX model (GPU)
 ```
 
 ---

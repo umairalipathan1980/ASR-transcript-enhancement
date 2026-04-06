@@ -25,7 +25,6 @@ transcript_eval/
 ├── enhanced_transcript_example.py    # Usage example for the TranscriptEnhancer component
 ├── eval_enhanced.py                  # Batch evaluation: original vs enhanced, outputs Excel report
 ├── side_by_side_compare.py          # Per-file word-level alignment reports with error markers
-│
 └── transcribers/
     ├── transcribe-gpt-4o.py         # Transcribes audio using OpenAI gpt-4o-transcribe
     ├── transcribe-whisper-openai.py  # Transcribes audio using OpenAI whisper-1 API

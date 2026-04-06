@@ -22,7 +22,6 @@ transcript_eval/
 ├── .env.example                      # Template for required environment variables
 ├── README.md                         # This file
 ├── requirements.txt                  # Python dependencies
-├── sample.txt                        # Sample transcript for quick testing
 ├── enhanced_transcript_example.py    # Usage example for the TranscriptEnhancer component
 ├── eval_enhanced.py                  # Batch evaluation: original vs enhanced, outputs Excel report
 ├── side_by_side_compare.py          # Per-file word-level alignment reports with error markers

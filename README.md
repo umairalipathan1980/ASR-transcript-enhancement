@@ -18,7 +18,6 @@ The repository also includes:
 
 ```
 transcript_eval/
-│
 ├── .env.example                      # Template for required environment variables
 ├── README.md                         # This file
 ├── requirements.txt                  # Python dependencies
